@@ -6,6 +6,10 @@ const history = require('connect-history-api-fallback');
 const app = express();
 const verifiedMeAPI = require('./api');
 const oidcAPI = require('./oidc');
+const oidcClient = require('./oidc/oidcClient');
+
+// create OIDC Client
+oidcClient.createClient();
 
 app.use(history());
 app.use(bodyParser.json());
