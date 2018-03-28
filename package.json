@@ -10,6 +10,7 @@
     "start": "node server/prod-server.js",
     "lint": "eslint --ext .js,.vue src src"
   },
+
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
