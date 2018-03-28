@@ -18,7 +18,7 @@
         <div class="choice-text blue">View more details</div>
         <div class="choice-buttons">
           <a :href="QR.signInQRCode" class="choice-buttons__button verified w-button">Open with Verified.Me</a>
-          <a href="#" class="choice-buttons__button w-button">Go to Form</a></div>
+          <div @click='authorizeUser()' class="choice-buttons__button w-button">Go to Form</div></div>
         <div class="student-discount"><img src="../../assets/student.svg" width="70" class="image">
           <div class="text-block-2">Student? We&#x27;ll waive the monthly maintenance fee.<br><a>Learn more about eligibility</a></div>
         </div>
@@ -32,7 +32,7 @@
         <div class="choice-text blue">View more details</div>
         <div class="choice-buttons">
           <a :href="QR.signInQRCode" class="choice-buttons__button verified w-button">Open with Verified.Me</a>
-          <a href="#" class="choice-buttons__button w-button">Go to Form</a></div>
+          <div @click='authorizeUser()' class="choice-buttons__button w-button">Go to Form</div></div>
       </div>
     </div>
     <h4 class="checking-subheader">Not sure? Compare checking accounts</h4>
@@ -53,6 +53,9 @@
       ...mapActions([
         'getSignInQRCode',
       ]),
+      authorizeUser() {
+        this.$store.dispatch('authorizeUser');
+      },
     },
     mounted() {
       this.getSignInQRCode();

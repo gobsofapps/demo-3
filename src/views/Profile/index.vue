@@ -38,14 +38,14 @@
                class="w-input"
                maxlength="256"
                name="address"
-               :value="userData.address.street_address"
+               :value="userData.address ? userData.address.street_address : userData.street_address"
                id="address">
         <label for="postal-code">Address:</label>
         <input type="text"
                class="w-input"
                maxlength="256"
                name="address"
-               :value="userData.address.postal_code"
+               :value="userData.address ? userData.address.postal_code : userData.postal_code"
                id="postal-code">
         <label for="country">Country of Residence:</label>
         <input type="text"
