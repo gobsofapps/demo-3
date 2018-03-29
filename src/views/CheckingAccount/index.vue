@@ -17,8 +17,9 @@
         <div class="choice-text">Minimum balance or qualifying direct deposit required for the $0 monthly fee</div>
         <div class="choice-text blue">View more details</div>
         <div class="choice-buttons">
-          <a :href="QR.signInQRCode" class="choice-buttons__button verified w-button">Open with bankID</a>
-          <div @click='authorizeUser()' class="choice-buttons__button w-button">Go to Form</div></div>
+          <div @click='authorizeUser()' class="choice-buttons__button verified w-button">Open with bankID</div>
+          <div class="choice-buttons__button w-button">Go to Form</div>
+        </div>
         <div class="student-discount"><img src="../../assets/student.svg" width="70" class="image">
           <div class="text-block-2">Student? We&#x27;ll waive the monthly maintenance fee.<br><a>Learn more about eligibility</a></div>
         </div>
@@ -31,8 +32,9 @@
         <div class="choice-text">Minimum balance required for the $0 monthly fee</div>
         <div class="choice-text blue">View more details</div>
         <div class="choice-buttons">
-          <a :href="QR.signInQRCode" class="choice-buttons__button verified w-button">Open with bankID</a>
-          <div @click='authorizeUser()' class="choice-buttons__button w-button">Go to Form</div></div>
+          <div @click='authorizeUser()' class="choice-buttons__button verified w-button">Open with bankID</div>
+          <div class="choice-buttons__button w-button">Go to Form</div>
+        </div>
       </div>
     </div>
     <h4 class="checking-subheader">Not sure? Compare checking accounts</h4>
