@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="checking-header intro">
+      <h4 class="checking-heading">Good Afternoon</h4>
+    </div>
     <div class="signin-header"></div>
     <div class="signin-form-container">
       <h5 class="signin-form-container__balance">My Balance<span class="text-span">TM</span></h5>
@@ -53,3 +56,14 @@
     name: 'Home',
   };
 </script>
+
+<style scoped>
+  .intro {
+    height: 60px;
+  }
+
+  .intro .checking-heading {
+    text-align: center;
+    margin-top: 15px;
+  }
+</style>

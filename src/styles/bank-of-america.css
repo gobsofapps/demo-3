@@ -1,5 +1,6 @@
 .signin-header {
   height: 150px;
+  margin-top: 62px;
   background-image: url('../assets/picadillty-circus.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -240,6 +241,11 @@
   background-position: 50% 50%;
   background-size: 2000px;
   background-repeat: repeat;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 }
 
 .checking-heading {
@@ -257,6 +263,7 @@
   background-position: 100% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 40px;
 }
 
 .bank-comparison {
@@ -420,7 +427,7 @@
 }
 
 .profile-data__header {
-  margin-top: 12px;
+  margin-top: 52px;
   padding: 12px;
   font-weight: 400;
   color: #c41230;
@@ -452,7 +459,7 @@
 }
 
 .profile-account__header {
-  margin-top: 28px;
+  margin-top: 68px;
   margin-bottom: 41px;
   font-weight: 400;
   font-size: 18px;
